@@ -1,0 +1,10 @@
+action (GetData) {
+  type(Search)
+  collect {
+    input (topic) {
+      type (Topic)
+      min (Optional) max (One)
+    }
+  }
+  output (DataSet)
+}

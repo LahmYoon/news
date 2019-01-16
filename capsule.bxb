@@ -1,0 +1,15 @@
+capsule {
+  id (example.news)
+  version (1.0.0)
+  format (3)
+  targets {
+    target (bixby-mobile-ko-KR)
+    target (bixby-mobile-en-US){enabled (false)}
+  }
+  
+  capsule-imports {
+    import (viv.core) { as (core) }
+    import (viv.entity) { version(3.8.2) as (entity) }
+    import (viv.common) { as (common) version-from (entity)}
+  }
+}

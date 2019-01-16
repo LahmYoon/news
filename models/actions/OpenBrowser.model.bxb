@@ -1,0 +1,10 @@
+action (OpenBrowser) {
+  type(Constructor)
+  collect {
+    input (detailData) {
+      type (DetailData)
+      min (Required) max (One)
+    }
+  }
+  output (URL)
+}

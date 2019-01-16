@@ -1,0 +1,23 @@
+endpoints {
+  authorization {
+    none
+  }
+  
+  // action과 그에 맞는 자바스크립트를 매핑합니다.
+  action-endpoints {
+    action-endpoint (GetData) {
+      accepted-inputs (topic)
+      local-endpoint (GetDatas.js)
+    }
+    
+    action-endpoint (GetDetail) {
+      accepted-inputs (news)
+      local-endpoint (GetDetail.js)
+    } 
+    
+    action-endpoint (OpenBrowser) {
+      accepted-inputs (detailData)
+      local-endpoint (OpenBrowser.js)
+    } 
+  }
+}

@@ -1,0 +1,13 @@
+// 결과 화면에 대한 보여주는 방식을 설정합니다. (https://bixbydevelopers.com/dev/docs/reference/type/result-view)
+result-view {
+  // 결과 화면을 보여주고 싶은 output concept을 지정합니다.
+  match: DetailData (this)
+  
+  render{
+    layout-macro (info_summary) {
+      param (info) { // GetDetail_Result_Macro.layout의 param명을 적습니다.
+        expression (this) // 결과로 들어온 객체를 layout으로 전달합니다.
+      }
+    }
+  }
+}

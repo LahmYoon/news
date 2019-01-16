@@ -1,0 +1,5 @@
+structure (DetailData) {
+  
+  // concept을 상속합니다. (https://bixbydevelopers.com/dev/docs/reference/type/structure.extends)
+  extends (DataSet)
+}

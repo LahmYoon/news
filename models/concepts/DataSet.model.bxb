@@ -1,0 +1,11 @@
+structure (DataSet) {
+  property (url) {
+    type (URL)
+    min (Required) max (One)
+  }
+  
+  property (title) {
+    type (Title)
+    min (Required) max (One)
+  }
+}

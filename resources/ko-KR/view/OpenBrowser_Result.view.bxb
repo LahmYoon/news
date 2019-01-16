@@ -1,0 +1,11 @@
+result-view {
+  match: URL (this)
+  
+  // 앱을 실행하고 내부 데이터를 앱으로 보냅니다. (https://bixbydevelopers.com/dev/docs/reference/type/result-view.app-launch)
+  app-launch {
+    payload-uri ("#{value(this)}")
+    
+    //어플리케이션 deeplink(URI) 사용시
+    //payload-mapper(inputMappers.js::searchRestaurant)
+  }
+}
